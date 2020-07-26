@@ -1,0 +1,90 @@
+.text-color_white {
+  color: white; }
+
+.first-letter_yellow:first-letter {
+  color: #ffc600; }
+
+.service-prov {
+  background-image: url("../media/limbo.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid white; }
+
+@media (max-width: 1200px) {
+  .service-prov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px; } }
+
+.service-prov__title:after {
+  content: "";
+  background-color: #c5c5c5;
+  width: 45%;
+  margin-right: 16%;
+  margin-left: auto;
+  height: 1px;
+  display: block; }
+
+@media (max-width: 1200px) {
+  .service-prov__title:after {
+    margin-right: 25%; } }
+
+.big-letter {
+  font-size: 45px; }
+
+.service-prov__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 6.7%;
+  margin-top: 5%;
+  width: 25%; }
+
+@media (max-width: 1200px) {
+  .service-prov__title {
+    width: 93.3%;
+    height: 40vw;
+    margin-right: auto;
+    text-shadow: 0 0 1px black; } }
+
+.service-prov__name {
+  font-size: 23px;
+  font-weight: 500; }
+
+@media (max-width: 1200px) {
+  .service-prov__name {
+    text-shadow: 0 0 20px white;
+    margin-top: 10px; } }
+
+.service-prov__description {
+  font-size: 15px;
+  margin-top: 30px; }
+
+.service-prov__layout {
+  margin-top: 45px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40%; }
+
+@media (max-width: 1200px) {
+  .service-prov__layout {
+    margin: auto;
+    width: 100%;
+    background-color: black; } }
+
+.service-prov__service {
+  width: 30%;
+  margin-bottom: 80px;
+  margin-left: 90px; }
+
+@media (max-width: 1200px) {
+  .service-prov__service {
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px white;
+    padding: 5px;
+    margin-left: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px; } }

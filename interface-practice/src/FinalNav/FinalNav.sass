@@ -1,0 +1,106 @@
+$yellow: #ffc600
+.final-nav
+    background-color: black
+    color: white
+    display: flex
+    width: 100%
+    padding-bottom: 10px
+    @media (max-width: 1200px)
+        flex-direction: column
+.final-nav__content
+    width: 25%
+    @media ( max-width: 1200px )
+        width: 100%
+        display: flex
+        flex-direction: column
+        
+.final-nav__list
+    list-style: none
+    margin: 0
+    padding: 0
+    margin-left: 10%
+    margin-top: 60px
+    @media (max-width: 1200px)
+        width: 80%
+        margin: auto
+        display: flex
+        margin-top: 30px
+        flex-wrap: wrap
+        justify-content: space-around
+
+        
+.final-nav__item
+    margin-top: 25px
+    @media (max-width: 1200px)
+        margin-right: 15px
+    a
+        text-decoration: none
+        color: white
+        font-size: 18px
+        font-weight: 500
+        
+
+.final-nav__title
+    margin-top: 20px
+    font-size: 45px
+    font-weight: 700
+    margin-left: 10%
+.final-nav__social
+    width: 25%
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+    margin-left: 10%
+.social-link
+    width: 20%
+    border-radius: 50%
+    background-color: white
+    margin-right: 10%
+    padding: 10px
+.final-nav__item_active
+    a
+        color: $yellow
+.final-nav__list:after
+    display: block
+    content: ""
+    height: 2px
+    width: 50%
+    margin-top: 50px
+    background-color: $yellow
+    @media (max-width: 1200px)
+        width: 100%
+        margin-top: 20px
+
+.final-nav__logo
+    width: 75%
+    position: relative
+    @media (max-width: 1200px)
+        width: 100%
+        margin-top: 30px
+
+.final-nav__logo-title
+    font-size: 90px
+    font-weight: 700
+    margin-top: 370px
+    margin-left: 2.6%
+    z-index: 1
+    position: relative
+    @media  ( max-width: 1200px )
+        margin-top: 140px
+        font-size: 40px
+        
+
+.final-nav__logo-pic
+    opacity: 30%
+    width: 100%
+    position: absolute
+    @media ( max-width: 1200px )
+        opacity: 40%
+        
+.desktop_logo
+    @media (max-width: 1200px)
+        display: none
+.mobile_logo
+    display: none
+    @media (max-width: 1200px)
+        display: block

@@ -1,0 +1,74 @@
+$yellow: #ffc600
+.projects
+    background-color: white
+    border-top: 1px solid white
+    padding-bottom: 20px
+.projects__navigation
+    list-style: none
+    margin-left: 6.7%
+    padding: 0
+    display: flex
+    @media ( max-width: 1200px )
+        flex-wrap: wrap
+        
+    li 
+        margin: 0
+        padding: 0
+        margin-right: 20px
+        font-weight: 600
+        font-size: 15px
+        @media  ( max-width: 1200px  )
+            width: 50%
+            margin-right: 0
+            margin-top: 20px
+            text-align: center
+            
+
+.first-letter_yellow:first-letter
+    color: $yellow
+
+.projects__title
+    font-size: 30px
+    font-weight: 600
+    margin-left: 6.7%
+    margin-top: 5%
+    width: 25%
+    @media  ( max-width:1200px)
+        width: 100%
+        text-align: center
+        margin-left: 0
+        
+
+.projects__title:after
+    content: ""
+    background-color: #c5c5c5
+    width: 45%
+    margin-right: 16%
+    margin-left: auto
+    height: 1px
+    display: block
+    @media  ( max-width:1200px)
+        width: 40%
+
+.big-letter
+    font-size: 45px
+
+.projects__navigation__item_active:after
+    content: ""
+    background-color: $yellow
+    width: 55%
+    margin: auto
+    height: 2px
+    display: block
+.projects__layout
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    margin-top: 20px
+    @media (max-width: 1200px)
+        justify-content: space-around
+.projects__picture
+    width: 25%
+    @media ( max-width:  1200px)
+        width: 100%
+        
