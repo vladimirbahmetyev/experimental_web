@@ -54,3 +54,7 @@
 @media (max-width: 1200px) {
   .text-style_description {
     text-align: center; } }
+
+@media (max-width: 1200px) {
+  .strategic__example {
+    display: none; } }

@@ -4,6 +4,7 @@ import "./Strategic.css"
 import processPic_1 from "../media/ProcessPic/pic_1.jpg"
 import processPic_2 from "../media/ProcessPic/pic_2.jpg"
 import processPic_3 from "../media/ProcessPic/pic_3.jpg"
+import Slider from '../Slider/Slider'
 
 export default function Strategic(){
     let minititle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -27,6 +28,14 @@ export default function Strategic(){
                 <Strategic__info title="Method" src={processPic_2} miniTitle={minititle} info={miniDesk} isPicLeft={false}/>
                 <Strategic__info title="Outcome" src={processPic_3} miniTitle={minititle} info={miniDesk} isPicLeft={true}/>
             </div>
+            <Slider
+            sliderClassName = 'slider_strategic'
+            elements={[
+                <Strategic__info title="Our Process" src={processPic_1} miniTitle={minititle} info = {desk} isPicLeft={true}/>,
+                <Strategic__info title="Method" src={processPic_2} miniTitle={minititle} info={miniDesk} isPicLeft={false}/>,
+                <Strategic__info title="Outcome" src={processPic_3} miniTitle={minititle} info={miniDesk} isPicLeft={true}/>
+            ]}
+            />
         </div>
     )
 }

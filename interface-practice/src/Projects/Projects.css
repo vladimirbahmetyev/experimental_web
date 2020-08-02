@@ -75,7 +75,8 @@
 
 @media (max-width: 1200px) {
   .projects__layout {
-    justify-content: space-around; } }
+    justify-content: space-around;
+    display: none; } }
 
 .projects__picture {
   width: 25%; }

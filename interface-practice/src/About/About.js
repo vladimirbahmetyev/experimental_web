@@ -30,7 +30,7 @@ export default  function About(){
                 <About_cal title="Game Design" text={text_about}/>
                 <About_cal title="Content Creation" text={text_about}/>                
             </div>
-            <Slider elements={
+            <Slider sliderClassName="slider_about" className="slider_about" elements={
                     [<About_cal title="App Development" text={text_about}/>,
                     <About_cal title="Game Design" text={text_about}/>,
                     <About_cal title="Content Creation" text={text_about}/>]

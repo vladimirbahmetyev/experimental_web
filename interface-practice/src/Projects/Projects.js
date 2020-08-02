@@ -8,6 +8,7 @@ import ori from "../media/projectsPic/ori.jpg"
 import pr2 from "../media/projectsPic/portal2.jpg"
 import rdr2 from "../media/projectsPic/rdr2.jpg"
 import tlou from "../media/projectsPic/tlou.jpeg"
+import Slider from "../Slider/Slider"
 
 export default function Projects() {
     return(
@@ -29,6 +30,17 @@ export default function Projects() {
                 <img className="projects__picture" src={rdr2}/>
                 <img className="projects__picture" src={tlou}/>
             </div>
+            <Slider elements={
+            [
+            <img className="projects__picture" src={bf2}/>,
+            <img className="projects__picture" src={de}/>,
+            <img className="projects__picture" src={mgr}/>,
+            <img className="projects__picture" src={nier}/>,
+            <img className="projects__picture" src={ori}/>,
+            <img className="projects__picture" src={pr2}/>,
+            <img className="projects__picture" src={rdr2}/>,
+            <img className="projects__picture" src={tlou}/>]
+            } sliderClassName="slider_proj" className='slider_proj'/>
         </div>
     )
     
