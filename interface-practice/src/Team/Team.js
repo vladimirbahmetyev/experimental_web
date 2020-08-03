@@ -5,6 +5,7 @@ import bg from "../media/Employe/doomguy.jpg"
 import tb from "../media/Employe/2b.jpg"
 import nil from "../media/Employe/nil.jpg"
 import norman from "../media/Employe/norman.jpg"
+import Slider from '../Slider/Slider'
 
 export default function Team(){
     return(
@@ -21,6 +22,15 @@ export default function Team(){
                     <Team__member photo={bg} name="Flynn Taggart" status="Sales President"/>
                     <Team__member photo={bg} name="Flynn Taggart" status="Developer"/>
                 </div>
+                <Slider
+                sliderClassName = "slider_team"
+                elements = {[
+                    <Team__member photo={bg} name="Flynn Taggart" status="CoFounder/CEO"/>,
+                    <Team__member photo={bg} name="Flynn Taggart" status="Process Manager"/>,
+                    <Team__member photo={bg} name="Flynn Taggart" status="Sales President"/>,
+                    <Team__member photo={bg} name="Flynn Taggart" status="Developer"/>
+                ]}
+                />
             </div>
         </div>
     )

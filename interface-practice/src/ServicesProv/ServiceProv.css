@@ -15,7 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px;
+    background-color: black; } }
 
 .service-prov__title:after {
   content: "";
@@ -71,6 +72,7 @@
   .service-prov__layout {
     margin: auto;
     width: 100%;
+    display: none;
     background-color: black; } }
 
 .service-prov__service {
@@ -80,11 +82,13 @@
 
 @media (max-width: 1200px) {
   .service-prov__service {
-    width: 70%;
+    width: 75%;
     border-radius: 15px;
     box-shadow: 0 0 5px white;
-    padding: 5px;
-    margin-left: 0;
+    padding: 2.5%;
+    margin-bottom: 40px;
     text-align: center;
-    margin: auto;
-    margin-top: 30px; } }
+    margin-top: 30px;
+    flex-shrink: 0;
+    margin-left: 10%;
+    margin-right: 10%; } }

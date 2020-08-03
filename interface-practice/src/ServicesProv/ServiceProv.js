@@ -1,5 +1,6 @@
 import React from "react"
 import "./ServiceProv.css"
+import Slider from '../Slider/Slider'
 
 export default function ServiceProv(props) {
     let desc = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo."
@@ -24,6 +25,24 @@ export default function ServiceProv(props) {
                     <div className="service-prov__description text-color_white">{desc}</div>
                 </div>
             </div>
+            <Slider sliderClassName="slider_serv" elements={[
+            <div className="service-prov__service">
+                <div className="service-prov__name text-color_white">App Development</div>
+                <div className="service-prov__description text-color_white">{desc}</div>
+            </div>,
+            <div className="service-prov__service">
+                <div className="service-prov__name text-color_white">Game Development</div>
+                <div className="service-prov__description text-color_white">{desc}</div>
+            </div>,
+            <div className="service-prov__service">
+                <div className="service-prov__name text-color_white">App Design</div>
+                <div className="service-prov__description text-color_white">{desc}</div>
+            </div>,
+            <div className="service-prov__service">
+                <div className="service-prov__name text-color_white">Game Design</div>
+                <div className="service-prov__description text-color_white">{desc}</div>
+            </div>
+            ]}/>
         </div>
     )
     
