@@ -35,10 +35,10 @@ function App() {
           <Projects/>
           <Strategic/>
           <ServiceProv/>
-          <Team/>
-          <Testimonials/>
+          <Team/>          
           <Blogs/>
           <Contact/>
+          <Testimonials/>
           <FinalNav/>
         </div>
      </div>

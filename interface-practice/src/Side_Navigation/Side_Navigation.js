@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "./Side_Navigation.css"
 
 export default function Navigation() {
-    let listWithClasses = [".about", ".projects",".strategic",".service-prov",".team",".testimonials",".blogs",".contact"]
+    let listWithClasses = [".about", ".projects",".strategic",".service-prov",".team",".blogs",".contact",".testimonials"]
 
     let currentNavItem = ".about"
 
@@ -73,13 +73,13 @@ export default function Navigation() {
                     <a  href="#team">Our<br></br>Team</a>
                 </li>
                 <li className="side_navigation__item">
-                    <a href="#testim">Testimonials</a>
-                </li>
-                <li className="side_navigation__item">
                     <a  href="#blog">Blogs</a>
                 </li>
                 <li className="side_navigation__item">
                     <a  href="#contacts">Contact<br></br>Us</a>
+                </li>
+                <li className="side_navigation__item">
+                    <a href="#testim">Testimonials</a>
                 </li>
             </ul>
         </div>
