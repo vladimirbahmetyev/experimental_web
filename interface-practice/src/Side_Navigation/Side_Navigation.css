@@ -1,17 +1,19 @@
 .side_navigation__layout {
   position: fixed;
   z-index: 10;
-  background-color: #000029;
+  background-color: white;
   border-radius: 10px;
   top: 15vh;
   right: 88vw;
   width: 10vw;
   padding: 20px;
   border: 1px solid black;
-  transition-duration: 300ms; }
+  transition-duration: 200ms;
+  transform: translateX(-20vw); }
   .side_navigation__layout ul {
     margin: 0;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     list-style: none; }
     .side_navigation__layout ul li {
       margin: 20px 0; }
@@ -20,13 +22,15 @@
         transition-duration: 200ms;
         transform: scale(1);
         padding: 0;
-        color: white;
+        color: black;
         font-size: 30px;
+        font-weight: 500;
         text-decoration: none; }
+        .side_navigation__layout ul li a:hover {
+          color: #ffc600; }
   @media (max-width: 1200px) {
     .side_navigation__layout {
       display: none; } }
 
 .side_navigation__item_active a {
-  font-size: 35px !important;
-  color: yellow !important; }
+  color: #ffc600 !important; }

@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./Side_Navigation.css"
 
 export default function Navigation() {
-    let listWithClasses = [".about", ".projects",".strategic",".service-prov",".team",".blogs",".contact",".testimonials"]
-
-    let currentNavItem = ".about"
+    const currentNavItemContainer = useRef(".about")
 
     let findComponentMiddleDeltaCoords = (divClassName)=>{
         let htmlElement = document.querySelector(divClassName)
@@ -12,44 +10,46 @@ export default function Navigation() {
         let currentY = (elementCoords.bottom - elementCoords.top) /2 + elementCoords.top - window.screen.height/ 2
         return (currentY)
     }
-
-    let currentNavigationHandler = (e) =>{
-        let components = listWithClasses.map(x =>Math.abs(findComponentMiddleDeltaCoords(x)))
-        let minValue = Math.min(...components)
-        let currentNavClass = listWithClasses[components.indexOf(minValue)]
-
-        if(currentNavItem !== currentNavClass){
-            let items = document.querySelector('.side_navigation__list').childNodes
-            for (let name of listWithClasses){
-                
-                let itemIndex = listWithClasses.indexOf(name)
-                let item = items[itemIndex]
-                if (name === currentNavClass){
-                    item.classList.add("side_navigation__item_active")
-                }
-                else{
-                    item.classList.remove("side_navigation__item_active")
-                }                
-            }
-        }
-        currentNavItem = currentNavClass
-    }
-
-    let sideNavVisibilityHandler = (e)=>{
-        let sideNav = document.querySelector(".side_navigation__layout")
-
-        if(window.pageYOffset > 1000){
-            sideNav.style.opacity = "1"
-            sideNav.style.transform = "translateX(2vw)"
-        }
-        else{
-            sideNav.style.opacity = "0"
-            sideNav.style.transform = "translateX(-10vw)"
-        }
-        
-    }
     
     useEffect(() => {
+        let listWithClasses = [".about", ".projects",".strategic",".service-prov",".team",".blogs",".contact",".testimonials"]
+        
+        let currentNavigationHandler = (e) =>{
+            let components = listWithClasses.map(x =>Math.abs(findComponentMiddleDeltaCoords(x)))
+            let minValue = Math.min(...components)
+            let currentNavClass = listWithClasses[components.indexOf(minValue)]
+    
+            if(currentNavItemContainer.current !== currentNavClass){
+                let items = document.querySelector('.side_navigation__list').childNodes
+                for (let name of listWithClasses){
+                    
+                    let itemIndex = listWithClasses.indexOf(name)
+                    let item = items[itemIndex]
+                    if (name === currentNavClass){
+                        item.classList.add("side_navigation__item_active")
+                    }
+                    else{
+                        item.classList.remove("side_navigation__item_active")
+                    }                
+                }
+            }
+            currentNavItemContainer.current = currentNavClass
+        }
+    
+        let sideNavVisibilityHandler = (e)=>{
+            let sideNav = document.querySelector(".side_navigation__layout")
+    
+            if(window.pageYOffset > 850){
+                sideNav.style.opacity = "1"
+                sideNav.style.transform = "translateX(2vw)"
+                sideNav.style.opacity = '1'
+            }
+            else{
+                sideNav.style.opacity = "0"
+                sideNav.style.transform = "translateX(-10vw)"
+            }
+            
+        }
         window.addEventListener('scroll', sideNavVisibilityHandler)
         window.addEventListener('scroll', currentNavigationHandler)
       }, []);
