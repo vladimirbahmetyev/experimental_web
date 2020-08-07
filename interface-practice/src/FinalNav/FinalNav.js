@@ -12,7 +12,7 @@ export default function FinalNav() {
             <div className="final-nav__content">
                 <div className="final-nav__title first-letter_yellow">Sublime</div>
                 <div className="final-nav__logo mobile_logo">
-                    <img className="final-nav__logo-pic" src={back}/>
+                    <img alt='' className="final-nav__logo-pic" src={back}/>
                     <div className="final-nav__logo-title"><span className="text-color_yellow">We</span> create <br/> Awesome Games</div>
                 </div>
                 <ul className="final-nav__list">
@@ -45,13 +45,13 @@ export default function FinalNav() {
                     </li>
                 </ul>
                 <div className="final-nav__social">
-                    <img className='social-link' src={twLogo}/>
-                    <img className='social-link' src={vkLogo}/>
-                    <img className='social-link' src={fbLogo}/>
+                    <img alt='' className='social-link' src={twLogo}/>
+                    <img alt='' className='social-link' src={vkLogo}/>
+                    <img alt='' className='social-link' src={fbLogo}/>
                 </div>
             </div>
             <div className="final-nav__logo desktop_logo">
-                <img className="final-nav__logo-pic" src={back}/>
+                <img alt='' className="final-nav__logo-pic" src={back}/>
                 <div className="final-nav__logo-title"><span className="text-color_yellow">We</span> create <br/> Awesome Games</div>
             </div>
         </div>

@@ -4,7 +4,7 @@ import dg from "../media/Employe/doomguy.jpg"
 
 export default function Testimonials() {
     return(
-        <div className="testimonials">
+        <div className="testimonials" id="testim">
             <div className="testimonials__title first-letter_yellow"><span className="big-letter">T</span>estimonials</div>
             <div className="testimonials__container">
                 <div className="testimonials__content">
@@ -16,7 +16,7 @@ export default function Testimonials() {
                     </div>
                 </div>
                 <div className="testimonials__member">
-                    <img className="testimonials__member-photo" src={dg}/>
+                    <img alt='' className="testimonials__member-photo" src={dg}/>
                     <div className="testimonials__member-name">Flynn Taggart</div>
                     <div className="testimonials__member-status">CoFounder/CEO</div>
                 </div>

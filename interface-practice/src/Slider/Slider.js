@@ -1,14 +1,12 @@
-import React, {useEffect} from "react"
+import React from "react"
 import './Slider.css'
 
 export default function Slider(props) {
     
     let slider
-    useEffect(() => {
-        slider = document.querySelector(`.${props.sliderClassName}`)   
-    }, []);
 
     let startX
+    let startY
 
     let currentItemIndex = 0
 
@@ -17,16 +15,25 @@ export default function Slider(props) {
     let minReqShift = 50
 
     let startHandler = (evt)=>{
+        slider = document.querySelector(`.${props.sliderClassName}`)
         startX = evt.changedTouches[0].clientX
+        startY = evt.changedTouches[0].clientY
     }
 
     let moveHandler = (evt)=>{
-        slider.childNodes[0].style.transitionDuration = '0ms'
-
-        let currentX = evt.changedTouches[0].clientX 
-        let currentShiftVW = (currentX - startX)/ document.body.clientWidth * 100 + transformDelta       
         
-        slider.childNodes[0].style.transform = `translateX(${currentShiftVW}vw)`        
+        let currentX = evt.changedTouches[0].clientX 
+        let currentY  = evt.changedTouches[0].clientY
+    
+        if(Math.abs(currentX - startX) > Math.abs(currentY - startY)){
+
+            slider.childNodes[0].style.transitionDuration = '0ms'
+            
+            let currentShiftVW = (currentX - startX)/ document.body.clientWidth * 100 + transformDelta       
+            
+            slider.childNodes[0].style.transform = `translateX(${currentShiftVW}vw)`        
+        }       
+        
     }
 
     let endHandler = (evt) =>{        

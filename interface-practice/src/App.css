@@ -9,7 +9,8 @@
     width: 100%; } }
 
 .App__first {
-  background-color: #000e16; }
+  background-color: #000e16;
+  z-index: 15; }
 
 @media (max-width: 1200px) {
   .App__first {
@@ -30,7 +31,8 @@
 .header__background {
   opacity: 40%;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  z-index: 11; }
 
 @media (max-width: 1200px) {
   .header__background {
@@ -43,3 +45,6 @@
 @media (max-width: 1200px) {
   .app__mobile-item {
     display: block; } }
+
+html {
+  scroll-behavior: smooth; }

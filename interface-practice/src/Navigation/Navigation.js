@@ -14,28 +14,38 @@ export default function Navigation() {
                     </h2>
                     <ul className="navigation__menu">
                         <li className="navigation__item">
-                            <a className="text-color_yellow" href="#">
+                            <a className="text-color_yellow" href="#about">
                                 About
                             </a>
                         </li>
                         <li className="navigation__item navigation__item_active">
-                            <a className="text-color_yellow " href="#">
-                                Development
+                            <a className="text-color_yellow " href="#proc">
+                                Process
                             </a>
                         </li>
                         <li className="navigation__item">
-                            <a className="text-color_yellow" href="#">
+                            <a className="text-color_yellow" href="#proj">
                                 Projects
                             </a>
                         </li>
                         <li className="navigation__item">
-                            <a className="text-color_yellow" href="#">
+                            <a className="text-color_yellow" href="#serv">
+                                Services
+                            </a>
+                        </li>
+                        <li className="navigation__item">
+                            <a className="text-color_yellow" href="#team">
+                                Team
+                            </a>
+                        </li>
+                        <li className="navigation__item">
+                            <a className="text-color_yellow" href="#blog">
                                 Blog
                             </a>
                         </li>
                     </ul>
                     </div>
-                <img src={navigation_background} className="navigation__background"/>                
+                <img alt=''  src={navigation_background} className="navigation__background"/>                
             </div>
     )
 }

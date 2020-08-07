@@ -9,9 +9,9 @@ import twLogo from "../media/SocialPic/twitter.png"
 
 export default function Contact(props) {
     return(
-        <div className="contact">
+        <div className="contact"id="contacts">
             <div className="contact__map">
-                <img  src={map} className="desktop_map"/>
+                <img  alt='' src={map} className="desktop_map"/>
             </div>
             <div className="contact__form">
                 <div className="contact__title first-letter_yellow"><span className="big-letter">C</span>ontact <span className="big-letter">U</span>s</div>
@@ -22,7 +22,7 @@ export default function Contact(props) {
                 </div>
                 <textarea value="Your Message" type="text" name="message" className="input-style width_full height_120" />
                 <div className="contact__button">SEND</div>
-                <img  src={map} className="mobile_map"/>
+                <img  alt='' src={map} className="mobile_map"/>
                 <div className="contact__info">
                     <div className="contact__info-title">Location Map</div>
                     <div className="contact__info__item">
@@ -39,9 +39,9 @@ export default function Contact(props) {
                     </div>
                 </div>
                 <div className="contact__social">
-                    <img className='social-link' src={twLogo}/>
-                    <img className='social-link' src={vkLogo}/>
-                    <img className='social-link' src={fbLogo}/>
+                    <img alt='' className='social-link' src={twLogo}/>
+                    <img alt='' className='social-link' src={vkLogo}/>
+                    <img alt='' className='social-link' src={fbLogo}/>
                 </div>
             </div>
         </div>

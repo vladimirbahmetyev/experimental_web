@@ -46,14 +46,21 @@ $yellow: #ffc600
         text-decoration: none
         font-size: 15px
         padding-bottom: 5px
+        transition-duration: 300ms
+        &:hover 
+            color: white   
+            border-bottom: 2px solid $yellow
+            transition-duration: 300ms
     @media ( max-width: 1200px )
         margin-bottom: 15px
         text-shadow: 1px 1px 1px black;
 
-.navigation__item_active
-    a
-        color: white   
-        border-bottom: 2px solid $yellow
+// .navigation__item_active
+//     a
+//         color: white   
+//         border-bottom: 2px solid $yellow
+
+
 
 .navigation
     width: 100%

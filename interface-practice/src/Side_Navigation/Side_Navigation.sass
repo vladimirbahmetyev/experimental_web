@@ -1,0 +1,32 @@
+.side_navigation__layout
+    position: fixed
+    z-index: 10
+    background-color: #000029
+    border-radius: 10px
+    top: 15vh
+    right: 88vw
+    width: 10vw
+    padding: 20px
+    border: 1px solid black
+    transition-duration: 300ms
+    ul
+        margin: 0
+        padding: 10px
+        list-style: none
+        li
+            // text-align: center
+            margin: 20px 0
+            a
+                margin: 0
+                transition-duration: 200ms
+                transform: scale(1)
+                padding: 0
+                color: white
+                font-size: 30px
+                text-decoration: none
+    @media (max-width: 1200px)
+        display: none
+.side_navigation__item_active
+    a
+        font-size: 35px !important
+        color: yellow !important

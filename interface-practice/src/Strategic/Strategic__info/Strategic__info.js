@@ -8,12 +8,12 @@ export default function Strategic__info(props){
     return(        
         props.isPicLeft?
         <div className="strategic__info">                        
-            <img className="strategic__info__pic desktop_pic_none" src={props.src}/>
+            <img alt='' className="strategic__info__pic desktop_pic_none" src={props.src}/>
             <div className="strategic__info__container">
                 <div className="strategic__info__title">
                     {finalTitle}
                 </div>
-                <img className="strategic__info__pic mobile_pic" src={props.src}/>
+                <img alt='' className="strategic__info__pic mobile_pic" src={props.src}/>
                 <div className="strategic__info__mini-title">
                     {props.miniTitle}
                 </div>
@@ -28,7 +28,7 @@ export default function Strategic__info(props){
                 <div className="strategic__info__title">
                     {finalTitle}
                 </div>
-                <img className="strategic__info__pic mobile_pic" src={props.src}/>
+                <img alt='' className="strategic__info__pic mobile_pic" src={props.src}/>
                 <div className="strategic__info__mini-title">
                     {props.miniTitle}
                 </div>
@@ -36,7 +36,7 @@ export default function Strategic__info(props){
                     {props.info}
                 </div>
             </div>    
-            <img className="strategic__info__pic desktop_pic_none" src={props.src}/>
+            <img alt='' className="strategic__info__pic desktop_pic_none" src={props.src}/>
         </div>
     )
 }

@@ -8,6 +8,7 @@
         
 .App__first
     background-color: #000e16
+    z-index: 15 
     @media  ( max-width: 1200px )
         background-color: black
         
@@ -23,6 +24,7 @@
     opacity: 40%
     position: relative
     height: 100%
+    z-index: 11
     @media ( max-width:1200px  )
         max-width: 100%
         height: auto
@@ -30,3 +32,5 @@
     display: none
     @media (max-width: 1200px)
         display: block
+html
+    scroll-behavior: smooth;

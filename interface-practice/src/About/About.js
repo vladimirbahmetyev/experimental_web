@@ -1,13 +1,13 @@
 import React from 'react'
 import './About.css' 
 import Slider from "../Slider/Slider"
-import About_cal from "./About__coloumn/About__coloumn"
+import AboutCal from "./About__coloumn/About__coloumn"
 
 let text_about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 export default  function About(){
     return(
-        <div className="about">
+        <div className="about" id="about">
             <div className='about__info'>
                 <div className="about__title">
                     <span class='text-color_gray'><span className="font_bold">A</span>bout</span> 
@@ -26,14 +26,14 @@ export default  function About(){
                 </div>
             </div>
             <div className="about__more">
-                <About_cal title="App Development" text={text_about}/>
-                <About_cal title="Game Design" text={text_about}/>
-                <About_cal title="Content Creation" text={text_about}/>                
+                <AboutCal title="App Development" text={text_about}/>
+                <AboutCal title="Game Design" text={text_about}/>
+                <AboutCal title="Content Creation" text={text_about}/>                
             </div>
             <Slider sliderClassName="slider_about" className="slider_about" elements={
-                    [<About_cal title="App Development" text={text_about}/>,
-                    <About_cal title="Game Design" text={text_about}/>,
-                    <About_cal title="Content Creation" text={text_about}/>]
+                    [<AboutCal title="App Development" text={text_about}/>,
+                    <AboutCal title="Game Design" text={text_about}/>,
+                    <AboutCal title="Content Creation" text={text_about}/>]
                 }/>
         </div>
     )
